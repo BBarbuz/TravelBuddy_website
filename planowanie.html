@@ -1,0 +1,90 @@
+﻿<!DOCTYPE<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBuddy - Planowanie podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Arfiaxyve5RijL9PvimY510hw_nGJVnAhMP062lMUSwTzMNklRAASHMDcpsqd57t' async defer></script>
+    <script src="planowanie.js" defer></script>
+
+    <script type='text/javascript'>
+    function GetMap()
+    {
+        var map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'Arfiaxyve5RijL9PvimY510hw_nGJVnAhMP062lMUSwTzMNklRAASHMDcpsqd57t',
+            center: new Microsoft.Maps.Location(49.2790171, 22.5207935),
+            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+            zoom: 12
+        });
+    }
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelBuddy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="planowanie.html">Planowanie podróży</a></li>
+                <li><a href="galeria.html">Galeria zdjęć</a></li>
+                <li><a href="spolecznosc.html">Społeczność</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    <main>
+       
+    
+        <div class="form-container">
+            <form id="trip-form">
+                <label for="destination">Cel podróży:</label>
+                <select id="destination" name="destination">
+                    <option value="Polska - Bieszczady">Polska - Bieszczady</option>
+                    <option value="Brazylia - Amazonia">Brazylia - Amazonia</option>
+                    <option value="Austria - Alpy">Austria - Alpy</option>
+                    <option value="USA - Yellowstone">USA - Yellowstone</option>
+                    <option value="Japonia - Hokkaido">Japonia - Hokkaido</option>
+                    <option value="Maroko - Atlas">Maroko - Atlas</option>
+                </select><br><br>
+
+                <label for="budget">Budżet (w zł):</label>
+                <input type="number" id="budget" name="budget" min="0" step="500" required><br><br>
+
+    
+                <label for="start-date">Data wyjazdu:</label>
+                <input type="date" id="start-date" name="start-date" required><br><br>
+    
+                <label for="end-date">Data powrotu:</label>
+                <input type="date" id="end-date" name="end-date" required><br><br>
+    
+                <label>Typ wyjazdu:</label>
+                <input type="radio" id="relax" name="trip-type" value="Wypoczynkowy" required>
+                <label for="relax">Wypoczynkowy</label>
+                <input type="radio" id="tourist" name="trip-type" value="Turystyczny">
+                <label for="tourist">Turystyczny</label><br><br>
+    
+                <input type="submit" id="submit-data" value="Zaplanuj">
+
+                <button id="show-data-btn">Pokaż zapisane dane</button>
+                <button id="download-data-btn">Pobierz zapisane dane</button>
+                <div id="form-messages"></div>
+                <div id="saved-data-display"></div>
+                
+            </form>
+        </div>
+
+        
+        <div id="myMap"></div>
+
+
+
+    </main>
+
+    <footer>
+       <p>&copy; 2024 TravelBuddy. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

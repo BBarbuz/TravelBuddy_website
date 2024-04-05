@@ -1,0 +1,331 @@
+﻿/* Resetowanie podstawowych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Stylowanie paska nawigacyjnego */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Stylowanie sekcji banner */
+.banner {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+}
+.banner p {
+
+}
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Stylowanie stopki */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* galeria.html */
+.photo-banner {
+    text-align: center;
+    padding: 40px 0;
+}
+
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+    align-items: stretch;
+  }
+
+  .gallery a {
+    display: block;
+    overflow: hidden;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 150px; /* Możesz dostosować wysokość */
+    object-fit: cover; /* Dostosowuje obrazy bez ich zniekształcania */
+    transition: transform .2s ease-in-out;
+  }
+
+  .gallery a:hover img {
+    transform: scale(1.05);
+  }
+
+
+.photo-banner img {
+    width: 80%;
+    max-width: 600px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.description-banner  {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.description-banner p {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e9ecef;
+    padding: 50px 20px;
+}
+
+.background-banner {
+    background-image: url('images/tloGlowne.jpg');
+    padding: 250px 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    weight: max;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.background-banner2 {
+    background-image: url('images/przygodawNieznane.jpg');
+    padding: 250px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    weight: max;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-banner3 {
+    background-image: url('images/Obraz17.jpg');
+    padding: 250px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    weight: max;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-banner p {
+   
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
+/* Stylowanie sekcji 'Kim jesteśmy?' */
+.about-us {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.about-us h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: none; /* Usuwa kropki z listy */
+    padding: 0;
+}
+
+.about-us li {
+    background: url('path/to/check-icon.png') no-repeat left center; /* Opcjonalna ikona przed każdym elementem listy */
+    padding-left: 30px; /* Dostosuj, jeśli używasz ikony */
+    margin-bottom: 10px;
+}
+
+.about-us strong {
+    color: #007bff;
+}
+
+#saved-data-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.data-item label {
+    font-weight: bold;
+}
+
+.data-item span {
+    float: right;
+    color: #333;
+}
+
+
+#submit-data {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-dataput:hover {
+    background-color: #0056b3;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#myMap {
+    position: relative;
+    max-width: auto;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Zajmuje całą wysokość widocznej części strony */
+}
+
+#trip-form {
+    /* Dodaj swoje style dla formularza, np. szerokość, paddingi itp. */
+    width: 50%; /* Przykładowa szerokość, dostosuj do swoich potrzeb */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcjonalnie, dla lepszego wyglądu */
+}
+
+/* Stylowanie podstrony 'Community' */
+
+.community-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comment {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Zmiana kierunku rozmieszczenia elementów na kolumnowy */
+    align-items: flex-start; /* Wyrównanie elementów do lewej strony kontenera */
+}
+
+.profile-pic {
+    width: 60px; /* Dostosuj rozmiar do preferencji */
+    height: 60px; /* Dostosuj rozmiar do preferencji */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Odstęp pomiędzy zdjęciem profilowym a komentarzem */
+    object-fit: cover;
+}
+
+.travel-pic {
+    width: 100%; /* Zdjęcie z podróży zajmuje całą szerokość kontenera komentarza */
+    border-radius: 0; /* Usunięcie zaokrąglenia rogów dla zdjęcia z podróży */
+    margin-top: 10px; /* Odstęp pomiędzy komentarzem a zdjęciem z podróży */
+    object-fit: cover; /* Zapewnia, że zdjęcie nie będzie zniekształcone */
+}
+
+.comment p {
+    width: 100%; /* Tekst komentarza zajmuje całą szerokość kontenera przed zdjęciem z podróży */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
