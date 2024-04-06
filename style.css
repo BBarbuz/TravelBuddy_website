@@ -63,7 +63,7 @@ footer {
     margin-top: 40px;
 }
 
-/* galeria.html */
+/* Stylowanie galeria.html */
 .photo-banner {
     text-align: center;
     padding: 40px 0;
@@ -83,8 +83,8 @@ footer {
 
   .gallery img {
     width: 100%;
-    height: 150px; /* Możesz dostosować wysokość */
-    object-fit: cover; /* Dostosowuje obrazy bez ich zniekształcania */
+    height: 150px; 
+    object-fit: cover; 
     transition: transform .2s ease-in-out;
   }
 
@@ -123,7 +123,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 700px;
-    weight: max;
+    width: max;
     color: #ffffff;
     font-size: 32px;
     font-weight: bold;
@@ -139,7 +139,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 700px;
-    weight: max;
+    width: max;
     color: #ffffff;
     font-size: 32px;
     font-weight: bold;
@@ -155,7 +155,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 700px;
-    weight: max;
+    width: max;
     color: #ffffff;
     font-size: 32px;
     font-weight: bold;
@@ -195,13 +195,13 @@ footer {
 }
 
 .about-us ul {
-    list-style-type: none; /* Usuwa kropki z listy */
+    list-style-type: none;
     padding: 0;
 }
 
 .about-us li {
     background: url('path/to/check-icon.png') no-repeat left center; /* Opcjonalna ikona przed każdym elementem listy */
-    padding-left: 30px; /* Dostosuj, jeśli używasz ikony */
+    padding-left: 30px; /* Dostosowanie jeżeli ikona jest używana */
     margin-bottom: 10px;
 }
 
